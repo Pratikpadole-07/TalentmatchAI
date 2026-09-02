@@ -9,9 +9,9 @@ import pandas as pd
 
 import os
 
-API_URL = st.secrets.get(
+API_URL = os.getenv(
     "API_URL",
-    os.getenv("API_URL", "http://127.0.0.1:8000")
+    "http://127.0.0.1:8000"
 )
 
 # ============================================================
